@@ -1,0 +1,151 @@
+/* BODY */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    color: white;
+}
+
+/* FORMATTAZIONE GENERALE */
+
+main, footer {
+    text-align: center;
+}
+
+.bordi {
+    background-color: #222f3f;
+}
+
+.menu {
+    background-color: #364759;
+}
+
+/* HEADER*/
+
+header div, header nav {
+    padding: 0.8vw 2vw;
+}
+
+header img {
+    width: 10vw;
+}
+
+/* NAV */
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0 0.5vw;
+}
+
+nav a:hover {
+    border: solid white 1px;
+}
+
+/* MAIN */
+
+main {
+    background-color: #e9edee;
+    padding: 2.5vw;
+}
+
+/* SECTION */
+
+section {
+    background-color: #f76500;
+    padding: 0.4vw;
+}
+
+/* ASIDE */
+
+aside {
+    background-image: url(../images/bg-image.png);
+    font-weight: bold;
+    margin: 2vw 0;
+    padding: 3.5vw 0 2.5vw;
+}
+
+aside:hover {
+    background-image: url(../images/bg-img.png);
+    color: #222f3f;
+}
+
+aside h2{
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+
+aside p {
+    font-size: 1.1em;
+}
+
+/* ARTICLE */
+
+article {
+    color: black;
+}
+
+#gift-ideas {
+    background-color: white;
+    text-align: left;
+    margin-bottom: 2vw;
+    padding: 0.8vw 2.4vw;
+    height: 28vw;
+}
+
+.indirizzo-categorie {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.sfoglia-categoria {
+    color: #0b788e;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 1vw;
+}
+
+.sfoglia-categoria:hover {
+    text-decoration: underline;
+}
+
+.categorie-piccole {
+    display: inline-block;
+    margin: auto 1vw;
+}
+
+.categorie-piccole img {
+    height: 25vw;
+    width: 19vw;
+    border-radius: 25px;
+    box-shadow: 1.3vw 0.6vw 0.6vw #e9edee;
+}
+
+.sezioni {
+    margin-bottom: 3vw;
+}
+
+.sezioni img{
+    width: 94vw;
+}
+
+/* FOOTER */
+
+footer div.menu{
+    padding: 1vw 0;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+}
+
+footer div.bordi {
+    padding: 5vw 0;
+}
+
+footer img {
+    width: 13vw;
+}
