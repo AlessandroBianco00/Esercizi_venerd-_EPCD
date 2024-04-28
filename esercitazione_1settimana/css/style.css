@@ -150,11 +150,12 @@ footer a {
 }
 
 ul {
-    border-bottom: solid 1px;
     list-style: none;
     padding-bottom: 1.5em;
 }
 
 footer p {
     padding-top: 1.5em;
+    border-top: solid 1px;
+    margin: 0 8vw;
 }

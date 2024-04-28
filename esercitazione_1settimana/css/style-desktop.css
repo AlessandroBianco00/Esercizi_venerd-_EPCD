@@ -172,11 +172,12 @@ footer a {
 }
 
 ul {
-    border-bottom: solid 1px;
     list-style: none;
     padding-bottom: 1.5em;
 }
 
 footer p {
     padding-top: 1.5em;
+    margin: 0 30vw;
+    border-top: solid 1px;
 }

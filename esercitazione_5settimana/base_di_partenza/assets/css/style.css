@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* FORMATTAZIONE GENERALE */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: #191919;
+}
+
+header,
+#hero,
+article,
+footer {
+  padding: 0 10vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER */
+
+header {
+  background-color: #ffc017;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: #191919 1px solid;
+  padding: 1em 10vw;
+  position: sticky;
+  top: 0;
+}
+
+header svg {
+  color: #191919;
+}
+
+/* NAV */
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav li {
+  font-size: 0.75em;
+  margin-left: 5em;
+}
+
+nav a {
+  color: #191919;
+}
+
+nav button {
+  background-color: #191919;
+  color: white;
+  padding: 1em 2em;
+  border-radius: 25px;
+  border: none;
+}
+
+/* ANIMAZIONE SCROLL */
+
+@keyframes buttonAnimation {
+  0% {
+    background-color: #191919;
+  }
+
+  100% {
+    background-color: #1a8917;
+  }
+}
+
+@keyframes navAnimation {
+  0% {
+    background-color: #ffc017;
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+.headerBianco {
+  animation: navAnimation 0.5s linear 0s forwards;
+}
+
+.headerBianco button {
+  animation: buttonAnimation 0.5s linear 0s forwards;
+}
+
+/* MAIN */
+
+hr {
+  color: #fff;
+}
+
+/* HERO (SECTION)*/
+
+#hero {
+  padding-right: 0;
+  background-color: #ffc017;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #191919;
+}
+
+#hero h1 {
+  font-family: "Spectral", serif;
+  font-size: 4.5em;
+  line-height: 1em;
+  margin-top: 5vh;
+}
+
+#hero h6 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+}
+
+#hero button {
+  background-color: #191919;
+  color: white;
+  margin-bottom: 10vh;
+  padding: 0.5em 2em;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.1em;
+}
+
+/* ARTICLE */
+
+article {
+  font-size: 0.8em;
+  margin: 2em 0;
+}
+
+article h3 {
+  font-weight: bold;
+  display: inline-block;
+}
+
+#contenitore-articoli {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.articolo {
+  margin: 1em 0;
+  margin-right: 2em;
+  width: 23vw;
+  display: flex;
+  justify-content: left;
+}
+
+.numero-art {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #bdbdbd;
+}
+
+.autore {
+  display: flex;
+  align-items: center;
+}
+
+.autore img {
+  border-radius: 100%;
+  margin: 0.5em;
+}
+
+.autore p {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.articolo h5 {
+  font-weight: bold;
+}
+
+.data-art {
+  color: gray;
+}
+
+/* ARTICOLI-PER-TE (SECONDA META' MAIN) */
+
+#articoli-per-te {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#articoli-per-te article {
+  padding-right: 4vw;
+}
+
+.articolo-recente {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.info-articolo {
+  width: 30vw;
+}
+
+#articolo-recente h3 {
+  font-size: 1.5em;
+}
+
+.article-summary {
+  color: gray;
+}
+
+.categoria {
+  background-color: #bdbdbd;
+  padding: 0.3em 0.5em;
+  border-radius: 40%;
+}
+
+.data-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-img {
+  display: flex;
+  align-items: center;
+}
+
+.img-articolo {
+  height: 12em;
+  margin-left: 1em;
+}
+
+/* ASIDE */
+
+aside {
+  margin: 2em 0;
+  padding-right: 10vw;
+  font-size: 0.8em;
+}
+
+aside h3 {
+  font-weight: bold;
+}
+
+aside a {
+  text-decoration: none;
+  color: grey;
+}
+
+#div-categorie {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: #eaeaea 1px solid;
+  padding-bottom: 2em;
+}
+
+#div-categorie a {
+  margin-right: 1em;
+  border: solid 1px #eaeaea;
+  border-radius: 5%;
+  padding: 0.2em 0.5em;
+  margin-top: 0.5em;
+}
+
+aside ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+aside li {
+  margin-right: 1em;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #191919;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 0 1em 10vw;
+}
+
+footer img {
+  width: 10em;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(318deg)
+    brightness(103%) contrast(99%);
+}
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 1em;
+}
+
+footer li {
+  font-size: 0.75em;
+  margin-right: 2em;
+}
+
+footer a {
+  color: white;
+}
+
+/* MEDIA QUERIES FORMATO TABLET E MOBILE */
+
+@media screen and (max-width: 992px) {
+  .img-articolo {
+    height: auto;
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  article,
+  footer {
+    padding: 0 3vw;
+  }
+
+  header {
+    padding: 1em 3vw;
+  }
+
+  header img,
+  footer img {
+    width: 7em;
+  }
+
+  nav li {
+    margin-left: 1em;
+  }
+
+  nav button {
+    padding: 0.5em 0.8em;
+  }
+
+  /* MAIN */
+
+  #hero {
+    padding-left: 3vw;
+  }
+
+  #hero h1 {
+    font-size: 3em;
+    margin-top: 0.5em;
+  }
+
+  #hero h6 {
+    font-size: 1.1em;
+  }
+
+  #hero button {
+    margin-bottom: 2em;
+    padding: 0.5em 1em;
+    border-radius: 25px;
+  }
+
+  #hero img {
+    width: 50vw;
+  }
+
+  .articolo {
+    margin: 1em 0;
+    margin-right: 2em;
+    width: 38vw;
+  }
+
+  #articoli-per-te {
+    flex-direction: column;
+  }
+
+  /* MAIN (seconda parte) */
+
+  aside {
+    padding: 0 3vw;
+  }
+
+  #articoli-per-te article {
+    margin-top: 0;
+  }
+
+  .info-articolo {
+    width: 60vw;
+    font-size: 0.9em;
+  }
+
+  .img-articolo {
+    height: 10em;
+    width: auto;
+  }
+
+  footer {
+    padding: 1em 0 1em 3vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  #hero button {
+    font-size: 0.8em;
+    padding: 0.5em 2em;
+  }
+
+  .articolo {
+    width: 85vw;
+  }
+
+  .info-articolo {
+    width: 50vw;
+    font-size: 0.9em;
+  }
+
+  .img-articolo {
+    width: 40vw;
+    height: auto;
+  }
+}
