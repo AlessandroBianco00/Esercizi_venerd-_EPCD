@@ -1,0 +1,27 @@
+@import "./bootstrap/functions"; //necessario per l'import "variables"
+@import "./bootstrap/variables"; // variabili da modificare
+
+//Palette Netflix
+$new-primary: #fff;
+$new-secondary: #171717;
+$new-danger: #e50914;
+$new-dark: #000;
+
+$new-theme-colors: (
+  "primary": $new-primary,
+  "secondary": $new-secondary,
+  "danger": $new-danger,
+  "dark": $new-dark,
+  "gray": grey,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+@import "./bootstrap/bootstrap.scss"; // import bootstrap modificato
+
+@import "./my_partials/mixins";
+@import "./my_partials/header";
+@import "./my_partials/main";
+@import "./my_partials/footer";
+@import "./my_partials/profile";
+@import "./my_partials/account";

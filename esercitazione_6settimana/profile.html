@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix Profile</title>
+    <link href="./assets/scss/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body id="profile-page" class="bg-secondary text-primary">
+    <header>
+      <img src="./assets/img/netflix_logo.png" alt="" />
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col-12 col-md-2"></div>
+        <div class="col-12 col-md-8">
+          <div>
+            <h1>Edit Profile</h1>
+            <div class="row border-top border-bottom border-gray">
+              <div class="col-4">
+                <div id="div-profilo">
+                  <img
+                    src="./assets/img/avatar.png"
+                    alt="profile avatar"
+                  /><span
+                    class="badge rounded-pill text-bg-dark border border-primary"
+                    ><i class="bi bi-pencil-fill"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="col-8 text-gray">
+                <div class="py-3">
+                  <h6 class="text-primary bg-gray p-2">Strive Student</h6>
+                  <p>Language :</p>
+                  <div class="dropdown me-1">
+                    <button
+                      type="button"
+                      class="btn text-bg-dark border border-primary dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      data-bs-offset="10,20"
+                    >
+                      English
+                    </button>
+                    <ul
+                      class="dropdown-menu bg-secondary border border-primary"
+                    >
+                      <li>
+                        <a
+                          class="dropdown-item text-bg-dark border border-primary"
+                          href="#"
+                          >Italian</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item text-bg-dark border border-primary"
+                          href="#"
+                          >German</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item text-bg-dark border border-primary"
+                          href="#"
+                          >English</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="border-top border-bottom border-gray py-3">
+                  <h6>Maturity Settigs :</h6>
+                  <button type="button" class="btn btn-gray text-primary">
+                    ALL MATURITY SETTINGS
+                  </button>
+                  <p>Show titles of all maturity ratings for this profile.</p>
+                  <button type="button" class="btn btn-outline-gray">
+                    EDIT
+                  </button>
+                </div>
+                <div class="py-3">
+                  <h6>Autoplay controls</h6>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Autoplay the next episode
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Autoplay previews while browsing
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="bottoni-salvataggio">
+              <button type="button" class="btn btn-light text-dark">
+                SAVE
+              </button>
+              <button type="button" class="btn btn-outline-gray">CANCEL</button>
+              <button type="button" class="btn btn-outline-gray">
+                DELETE PROFILE
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-2"></div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

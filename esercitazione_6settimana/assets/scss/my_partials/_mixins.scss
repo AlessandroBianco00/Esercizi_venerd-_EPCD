@@ -1,0 +1,19 @@
+// PADDING HEADER E SECTION
+
+@mixin paddingComune {
+  margin: 0;
+  padding: 1vw 2vw;
+}
+
+@mixin zoomThumb {
+  @keyframes scaleImg {
+    0% {
+      scale: 1;
+    }
+    100% {
+      scale: 1.3;
+      z-index: 1;
+    }
+  }
+  animation: scaleImg 0.5s linear 0.1s forwards;
+}

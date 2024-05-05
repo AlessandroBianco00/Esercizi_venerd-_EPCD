@@ -1,0 +1,56 @@
+#profile-page {
+  header {
+    @include paddingComune;
+    img {
+      width: 10em;
+    }
+  }
+  main {
+    h1 {
+      font-size: 2.5em;
+    }
+    button {
+      padding: 0.5em 1em;
+    }
+    .row.border-gray {
+      @include paddingComune;
+      #div-profilo {
+        position: relative;
+        img {
+          width: 100%;
+        }
+        .rounded-pill {
+          position: absolute;
+          bottom: 10%;
+          left: 10%;
+        }
+      }
+      .col-8 {
+        div {
+          .dropdown button {
+            padding-right: 2em;
+          }
+          button {
+            margin-bottom: 0.5em;
+            border-radius: 0;
+          }
+          h6 {
+            font-size: 1.2em;
+            font-weight: 400;
+          }
+          input {
+            background-color: transparent;
+            border: 1px solid gray;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+    #bottoni-salvataggio {
+      button {
+        margin: 1em 0.5em 0.5em 0;
+        border-radius: 0;
+      }
+    }
+  }
+}

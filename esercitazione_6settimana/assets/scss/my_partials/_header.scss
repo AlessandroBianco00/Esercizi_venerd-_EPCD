@@ -1,0 +1,59 @@
+#home-page,
+#account-page {
+  header {
+    nav {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      @include paddingComune;
+      #left-nav {
+        img {
+          width: 9em;
+        }
+      }
+      #center-nav {
+        display: flex;
+        justify-content: center;
+        ul {
+          padding: 0;
+        }
+      }
+      #right-nav {
+        display: flex;
+        justify-content: center;
+        ul {
+          font-size: 1.2em;
+        }
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        li {
+          margin: 0 0.5em;
+          cursor: pointer;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+        }
+      }
+      @media screen and (min-width: 769px) {
+        flex-direction: row;
+        justify-content: space-between;
+        #div-logo {
+          display: flex;
+          ul {
+            div {
+              display: flex;
+              li {
+                font-size: 0.9em;
+                margin: auto 0.5em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
