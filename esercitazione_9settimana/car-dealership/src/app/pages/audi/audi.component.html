@@ -28,6 +28,13 @@
             <p>Prezzo: {{ car.price }} &euro;</p>
           </div>
           <p>Disponibiltà: {{ car.available ? "disponibile" : "esaurito" }}</p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            routerLink="/details/{{ car.model }}"
+          >
+            Dettagli vendita
+          </button>
         </div>
       </div>
     </div>

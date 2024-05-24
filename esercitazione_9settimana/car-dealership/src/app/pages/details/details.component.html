@@ -20,13 +20,6 @@
             <p>Prezzo: {{ car.price }} &euro;</p>
           </div>
           <p>Disponibiltà: {{ car.available ? "disponibile" : "esaurito" }}</p>
-          <button
-            type="button"
-            class="btn btn-primary"
-            routerLink="/{{ car.brand.toLocaleLowerCase() }}"
-          >
-            Le nostre {{ car.brand }}
-          </button>
         </div>
       </div>
     </div>
