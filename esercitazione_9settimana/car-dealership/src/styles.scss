@@ -1,4 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/functions"; //necessario per l'import "variables"
+@import "../node_modules/bootstrap/scss/variables"; // variabili da modificare
+
+// Aggiungo 2 colori a Bootstrap
+$new-theme-colors: (
+  "complementary": #737bd3,
+  "blu-scuro": #17192b,
+  "neutral": #f1f1f1,
+  "titles": #232323,
+);
+
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"; // import bootstrap modificato
+
+//Formattazione generale e partials
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Modifiche grafiche */
+
+body {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 1.2rem;
+}
 
 .car-brand {
   width: 10em;
