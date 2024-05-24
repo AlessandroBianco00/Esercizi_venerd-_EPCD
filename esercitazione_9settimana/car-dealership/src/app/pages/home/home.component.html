@@ -1,4 +1,4 @@
-<section class="container text-center">
+<section class="container text-center pb-4">
   <h2>Our brands</h2>
   <div class="row align-items-center">
     <div class="col-12 col-sm-4 py-2">
@@ -31,7 +31,7 @@
   <div class="row g-2" *ngIf="randomCarArray[0]">
     <div class="col-12 col-md-6" *ngFor="let car of randomCarArray">
       <div
-        class="card h-100"
+        class="card h-100 text-blu-scuro"
         [ngClass]="{
           'bg-success': car.available,
           'bg-danger': !car.available

@@ -2,7 +2,7 @@
   <div class="row g-1" *ngIf="carModel">
     <div class="col-12" *ngFor="let car of carModel">
       <div
-        class="card h-100"
+        class="card h-100 text-blu-scuro"
         [ngClass]="{
           'bg-success': car.available,
           'bg-danger': !car.available
