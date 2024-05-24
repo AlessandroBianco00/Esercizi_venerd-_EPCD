@@ -1,0 +1,56 @@
+[
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://3.bp.blogspot.com/-CYMoe-WprmA/VS1OuK1TrII/AAAAAAAACBo/V_VG7cSfqQ0/s1600/Fiat-logo-vector.png",
+        "model": "500L",
+        "modelImage": "https://pngimg.com/uploads/fiat/fiat_PNG11865.png",
+        "year": 2015,
+        "price": 7500,
+        "available": false
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://3.bp.blogspot.com/-CYMoe-WprmA/VS1OuK1TrII/AAAAAAAACBo/V_VG7cSfqQ0/s1600/Fiat-logo-vector.png",
+        "model": "500 Abarth",
+        "modelImage": "https://blog.vpn-autos.com/wp-content/uploads/2019/04/2017-fiat-500-abarth-hatchback-side-view.png",
+        "year": 2010,
+        "price": 3500,
+        "available": true
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://logos-world.net/wp-content/uploads/2021/03/Ford-Logo-1965-present.png",
+        "model": "Taurus",
+        "modelImage": "https://images.jazelc.com/uploads/galpinford/2016-Ford-Taurus-Transparent1.png",
+        "year": 2009,
+        "price": 5200,
+        "available": false
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://logos-world.net/wp-content/uploads/2021/03/Ford-Logo-1965-present.png",
+        "model": "Focus",
+        "modelImage": "https://pngimg.com/uploads/ford/ford_PNG12204.png",
+        "year": 2014,
+        "price": 9700,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://logos-world.net/wp-content/uploads/2021/03/Audi-Symbol.png",
+        "model": "A3",
+        "modelImage": "https://www.pngplay.com/wp-content/uploads/13/Audi-A3-Free-PNG.png",
+        "year": 2012,
+        "price": 4300,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://logos-world.net/wp-content/uploads/2021/03/Audi-Symbol.png",
+        "model": "Q7",
+        "modelImage": "https://www.pngmart.com/files/22/Audi-Q7-Download-PNG-Image.png",
+        "year": 2020,
+        "price": 41700,
+        "available": false
+    }
+]

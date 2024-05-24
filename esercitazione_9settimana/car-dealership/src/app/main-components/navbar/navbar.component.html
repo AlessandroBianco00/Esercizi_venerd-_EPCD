@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-md bg-body-tertiary">
+  <div class="container-fluid">
+    <img
+      src="https://cdn.prowebdesigns.co.uk/media/2016/08/28155353/Logo-Design-SCS1-min.jpg"
+      alt="dealership logo"
+      class="logo-img"
+    />
+    <button
+      (click)="show = !show"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <!-- toggle variabile booleana-->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngClass]="{ show: show }">
+      <!-- toggle classe show -->
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/fiat" routerLinkActive="active"
+            >Fiat</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ford" routerLinkActive="active"
+            >Ford</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/audi" routerLinkActive="active"
+            >Audi</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,35 @@
+<article class="container">
+  <div class="row g-2" *ngIf="fordCarArray[0]">
+    <div class="col-12 text-center">
+      <img
+        src="{{ fordCarArray[0].brandLogo }}"
+        alt="brand logo"
+        class="car-brand"
+      />
+      <p>Le nostre {{ fordCarArray[0].brand }}</p>
+    </div>
+    <div class="col-12 col-md-6" *ngFor="let car of fordCarArray">
+      <div
+        class="card h-100"
+        [ngClass]="{
+          'bg-success': car.available,
+          'bg-danger': !car.available
+        }"
+      >
+        <img
+          src="{{ car.modelImage }}"
+          class="card-img-top"
+          alt="product img"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ car.brand }} {{ car.model }}</h5>
+          <div class="d-flex justify-content-between">
+            <p>Anno: {{ car.year }}</p>
+            <p>Prezzo: {{ car.price }} &euro;</p>
+          </div>
+          <p>Disponibiltà: {{ car.available ? "disponibile" : "esaurito" }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

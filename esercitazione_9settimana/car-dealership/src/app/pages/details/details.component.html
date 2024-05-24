@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row g-1" *ngIf="carModel">
+    <div class="col-12" *ngFor="let car of carModel">
+      <div
+        class="card h-100"
+        [ngClass]="{
+          'bg-success': car.available,
+          'bg-danger': !car.available
+        }"
+      >
+        <img
+          src="{{ car.modelImage }}"
+          class="card-img-top"
+          alt="product img"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{ car.brand }} {{ car.model }}</h5>
+          <div class="d-flex justify-content-between">
+            <p>Anno: {{ car.year }}</p>
+            <p>Prezzo: {{ car.price }} &euro;</p>
+          </div>
+          <p>Disponibiltà: {{ car.available ? "disponibile" : "esaurito" }}</p>
+          <button
+            type="button"
+            class="btn btn-primary"
+            routerLink="/{{ car.brand.toLocaleLowerCase() }}"
+          >
+            Le nostre {{ car.brand }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
