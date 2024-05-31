@@ -25,7 +25,7 @@ const routes: Routes = [
   {
     path:'users',
     component: UsersComponent,
-    title:'Fiat'
+    title:'Users'
   },
 ];
 
