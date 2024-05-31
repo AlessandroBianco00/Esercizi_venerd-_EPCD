@@ -811,7 +811,7 @@ export class UserService {
     }
   ]
 
-  constructor(private TodoSvc:TodoService) {}
+  constructor() {}
 
   addTodos(array:iTodo[]):iUser[] {
     this.userArray = this.userArray.map(user => {

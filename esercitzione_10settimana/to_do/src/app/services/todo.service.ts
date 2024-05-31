@@ -911,9 +911,9 @@ export class TodoService {
     }
   ]
 
-  addAuthor(array1:iTodo[], array:iUser[]):iTodo[] {
+  addAuthor(array1:iTodo[], array2:iUser[]):iTodo[] {
     array1 = array1.map(todo => {
-      let author = array.find(user => user.id == todo.userId
+      let author = array2.find(user => user.id == todo.userId
       )
       todo.author = author
       return todo
