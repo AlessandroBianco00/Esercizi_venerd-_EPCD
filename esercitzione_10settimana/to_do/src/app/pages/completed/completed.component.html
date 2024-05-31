@@ -1,0 +1,10 @@
+<div class="container-fluid p-4 bg-ivory">
+  <div class="row g-1" *ngIf="todoArray">
+    <div
+      class="col-12 border border-dark px-0"
+      *ngFor="let todoAll of todoArray"
+    >
+      <app-single-todo [todo]="todoAll"> </app-single-todo>
+    </div>
+  </div>
+</div>

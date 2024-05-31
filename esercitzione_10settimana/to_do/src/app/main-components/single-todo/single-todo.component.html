@@ -1,0 +1,15 @@
+<div
+  class="d-flex justify-content-between text-light p-2"
+  [ngClass]="{
+    'bg-success': todo.completed,
+    'bg-danger': !todo.completed
+  }"
+>
+  <div>
+    <p>{{ todo.todo }}</p>
+    <p>Author: {{ todo.author?.firstName }} {{ todo.author?.lastName }}</p>
+  </div>
+  <div class="d-flex justify-content-center align-items-center">
+    <input type="checkbox" [(ngModel)]="todo.completed" />
+  </div>
+</div>

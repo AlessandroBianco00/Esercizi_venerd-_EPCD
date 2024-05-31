@@ -1,0 +1,32 @@
+<main class="bg-ivory">
+  <h1 class="px-3 text-bluscuro">Daily Tasks!</h1>
+  <div class="d-flex px-3 mb-3">
+    <input
+      class="form-control me-2 border-bluscuro"
+      type="text"
+      [(ngModel)]="searchTerm"
+    />
+    <button
+      class="btn btn-outline-success me-2"
+      (click)="searchAuthor(searchTerm)"
+    >
+      Search
+    </button>
+    <button
+      class="btn btn-outline-bluscuro border-bluscuro"
+      (click)="completeArray()"
+    >
+      Restore
+    </button>
+  </div>
+  <div class="container">
+    <div class="row g-1" *ngIf="todoArray">
+      <div
+        class="col-12 border border-dark px-0"
+        *ngFor="let todoAll of todoArray"
+      >
+        <app-single-todo [todo]="todoAll"> </app-single-todo>
+      </div>
+    </div>
+  </div>
+</main>
