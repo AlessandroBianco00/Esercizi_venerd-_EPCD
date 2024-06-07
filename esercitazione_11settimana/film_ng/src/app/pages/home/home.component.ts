@@ -1,3 +1,4 @@
+import { AuthService } from './../../services/auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+
+  constructor(private AuthSvc:AuthService) {
+
+  }
+
+  syncIsLoggedIn:boolean = this.AuthSvc.syncIsLoggedIn
 
 }

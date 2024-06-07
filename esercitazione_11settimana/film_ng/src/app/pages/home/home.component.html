@@ -11,7 +11,20 @@
             Accedi subito per avere accesso al nostro catalogo e conosce altri
             utenti della nostra community
           </p>
-          <button class="btn btn-dark" routerLink="/auth">Accedi subito</button>
+          <button
+            class="btn btn-dark"
+            routerLink="/auth"
+            *ngIf="!syncIsLoggedIn"
+          >
+            Accedi subito
+          </button>
+          <button
+            class="btn btn-dark"
+            routerLink="/catalogue"
+            *ngIf="syncIsLoggedIn"
+          >
+            Visita il catalogo
+          </button>
         </div>
       </div>
     </div>

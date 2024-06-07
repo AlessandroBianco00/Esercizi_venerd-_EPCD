@@ -12,12 +12,10 @@
         />
         <div class="card-body">
           <h5 class="card-title fw-bold">{{ movie.title }}</h5>
-          <div class="d-flex justify-content-between">
-            <p class="card-text">Release: {{ movie.releaseYear }}</p>
-            <p class="card-text">Duration: {{ movie.minutesDuration }} min</p>
-          </div>
+          <p class="card-text">Release: {{ movie.releaseYear }}</p>
+          <p class="card-text">Duration: {{ movie.minutesDuration }} min</p>
           <button class="btn btn-success" (click)="toggleFavourite(movie.id)">
-            Preferiti
+            Toggle like
           </button>
         </div>
       </div>
