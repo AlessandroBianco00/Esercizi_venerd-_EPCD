@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-ocra">
   <div class="container-fluid">
     <img
       src="../../../assets/img/apple-touch-icon.png"
@@ -25,28 +25,40 @@
             class="nav-link"
             aria-current="page"
             routerLink="/"
-            routerLinkActive="active"
+            routerLinkActive="custom-active"
             [routerLinkActiveOptions]="{ exact: true }"
             >Home</a
           >
         </li>
         <li class="nav-item" *ngIf="isLoggedIn">
-          <a class="nav-link" routerLink="/catalogue" routerLinkActive="active"
+          <a
+            class="nav-link"
+            routerLink="/catalogue"
+            routerLinkActive="custom-active"
             >Catalogue</a
           >
         </li>
         <li class="nav-item" *ngIf="isLoggedIn">
-          <a class="nav-link" routerLink="/community" routerLinkActive="active"
+          <a
+            class="nav-link"
+            routerLink="/community"
+            routerLinkActive="custom-active"
             >Community</a
           >
         </li>
         <li class="nav-item" *ngIf="isLoggedIn">
-          <a class="nav-link" routerLink="/profile" routerLinkActive="active"
+          <a
+            class="nav-link"
+            routerLink="/profile"
+            routerLinkActive="custom-active"
             >Profile</a
           >
         </li>
         <li class="nav-item" *ngIf="!isLoggedIn">
-          <a class="nav-link" routerLink="/auth" routerLinkActive="active"
+          <a
+            class="nav-link"
+            routerLink="/auth"
+            routerLinkActive="custom-active"
             >Sign in</a
           >
         </li>

@@ -29,12 +29,11 @@ export class ProfileComponent {
 
     this.MovieSvc.getFavouriteMovies(userId).subscribe(favourites => {
       this.favouritesArray = favourites
+
+      this.favouritesArray.forEach(fav => {
+        this.MovieSvc.getMovieById(fav.movieId).subscribe(movie => this.moviesArray.push(movie))
+      })
     })
 
-    this.favouritesArray.forEach(fav => {
-      this.MovieSvc.getMovieById(fav.movieId).subscribe(movie => this.moviesArray.push(movie))
-    })
-
-    setTimeout(() => {console.log(this.moviesArray)} ,10000)
   }
 }

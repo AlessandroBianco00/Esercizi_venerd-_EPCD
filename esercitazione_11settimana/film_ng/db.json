@@ -142,6 +142,86 @@
       "movieId": 7,
       "userId": 1,
       "id": 4
+    },
+    {
+      "movieId": 1,
+      "userId": 4,
+      "id": 5
+    },
+    {
+      "movieId": 4,
+      "userId": 4,
+      "id": 6
+    },
+    {
+      "movieId": 12,
+      "userId": 4,
+      "id": 7
+    },
+    {
+      "movieId": 9,
+      "userId": 4,
+      "id": 8
+    },
+    {
+      "movieId": 2,
+      "userId": 5,
+      "id": 9
+    },
+    {
+      "movieId": 6,
+      "userId": 5,
+      "id": 10
+    },
+    {
+      "movieId": 10,
+      "userId": 5,
+      "id": 11
+    },
+    {
+      "movieId": 8,
+      "userId": 5,
+      "id": 12
+    },
+    {
+      "movieId": 5,
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "movieId": 11,
+      "userId": 2,
+      "id": 14
+    },
+    {
+      "movieId": 12,
+      "userId": 2,
+      "id": 15
+    },
+    {
+      "movieId": 4,
+      "userId": 2,
+      "id": 16
+    },
+    {
+      "movieId": 2,
+      "userId": 3,
+      "id": 17
+    },
+    {
+      "movieId": 3,
+      "userId": 3,
+      "id": 18
+    },
+    {
+      "movieId": 7,
+      "userId": 3,
+      "id": 19
+    },
+    {
+      "movieId": 9,
+      "userId": 3,
+      "id": 20
     }
   ]
 }

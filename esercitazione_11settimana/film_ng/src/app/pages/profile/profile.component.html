@@ -12,7 +12,18 @@
           </h6>
           <p class="card-text">your email: {{ currentUser.email }}</p>
           <div class="row" *ngIf="moviesArray">
-            <div class="col-4" *ngFor="let movie of moviesArray"></div>
+            <div class="col-3" *ngFor="let movie of moviesArray">
+              <div class="card text-bg-dark h-100">
+                <img
+                  [src]="movie.thumbnail"
+                  class="card-img-top"
+                  [alt]="movie.title + 'thumbnail'"
+                />
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">{{ movie.title }}</h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
