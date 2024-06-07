@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
+  //TUTTE LE PASSWORD UTENTE SONO: password
+
   authData:iAuthData = {
     email: '',
     password: ''
