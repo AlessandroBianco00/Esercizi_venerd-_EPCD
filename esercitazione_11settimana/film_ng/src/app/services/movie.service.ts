@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { iMovie } from '../Models/movie';
 import { iFavourite } from '../Models/favourites';
+import swal from 'sweetalert';
 
 @Injectable({
   providedIn: 'root'
@@ -39,10 +40,12 @@ export class MovieService {
       movieId: movieId,
       userId: userId
     }
+    swal("Aggiunto ai preferiti!", "", "success");
     return this.http.post<iFavourite>(this.favouritesUrl, newFav)
   }
 
   deleteFavourite(id:number){
+    swal("Rimosso dai preferiti", "", "warning");
     return this.http.delete(`${this.favouritesUrl}/${id}`)
   }
 
