@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row p-3 g-2">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Il tuo profilo</h2>
+          <h5 class="card-title">
+            {{ currentUser.name }}
+          </h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">
+            &#64;{{ currentUser.username }}
+          </h6>
+          <p class="card-text">your email: {{ currentUser.email }}</p>
+          <div class="row" *ngIf="moviesArray">
+            <div class="col-4" *ngFor="let movie of moviesArray"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

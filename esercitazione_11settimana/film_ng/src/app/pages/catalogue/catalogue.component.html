@@ -1,0 +1,26 @@
+<div class="container" *ngIf="movieArray">
+  <div class="row p-3 g-2">
+    <div
+      class="col-12 col-md-6 col-lg-4 col-xl-3"
+      *ngFor="let movie of movieArray"
+    >
+      <div class="card text-bg-dark h-100">
+        <img
+          [src]="movie.thumbnail"
+          class="card-img-top"
+          [alt]="movie.title + 'thumbnail'"
+        />
+        <div class="card-body">
+          <h5 class="card-title fw-bold">{{ movie.title }}</h5>
+          <div class="d-flex justify-content-between">
+            <p class="card-text">Release: {{ movie.releaseYear }}</p>
+            <p class="card-text">Duration: {{ movie.minutesDuration }} min</p>
+          </div>
+          <button class="btn btn-success" (click)="toggleFavourite(movie.id)">
+            Preferiti
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

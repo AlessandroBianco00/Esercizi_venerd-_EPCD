@@ -1,0 +1,147 @@
+{
+  "users": [
+    {
+      "email": "asddsad@sdsod.com",
+      "password": "$2a$10$RMLCYqrUBUZZSQCKLIndn.lDJzmPI7N3DX0vGH0S5Zq6t.HSqdL2e",
+      "name": "Giangiacomo Blue",
+      "username": "GGblue.ps",
+      "id": 1
+    },
+    {
+      "email": "safafasdf@igj.com",
+      "password": "$2a$10$rALqQ7FDgks9CJdF3pcM9.i1MYScjx8nDwe6NClF/vznIwI6CZauy",
+      "name": "Camillo Benz",
+      "username": "BenzLpo",
+      "id": 2
+    },
+    {
+      "email": "sfafasf@AOSDSA.com",
+      "password": "$2a$10$Opq9fANrX/OcSqj5e1UUhOkIhvIWcPRadiXmby2S14OckZNTG0yKq",
+      "name": "Davide Sbaffo",
+      "username": "Sbaff32423",
+      "id": 3
+    },
+    {
+      "email": "asfdas@oigfp.com",
+      "password": "$2a$10$p1HxjpqhohSC1NLDRPHH3.BBn5lZAnSo6iFPl6DLT/K1Znxo43nUO",
+      "name": "Alex Fosso",
+      "username": "xleijo00",
+      "id": 4
+    },
+    {
+      "email": "fhtredrgf@asfe.com",
+      "password": "$2a$10$02ZD2NIGadv3rUEWugJqROOLbrZUGVIVDOMDXNC5uyKc7qanJ9I6y",
+      "name": "Sophie Sium",
+      "username": "AliSo001",
+      "id": 5
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "Gone Girl",
+      "thumbnail": "https://image.tmdb.org/t/p/original/qymaJhucquUwjpb8oiqynMeXnID.jpg",
+      "releaseYear": 2014,
+      "minutesDuration": 149
+    },
+    {
+      "id": 2,
+      "title": "The Hateful Eight",
+      "thumbnail": "https://image.tmdb.org/t/p/original/oudF7C4ulb8jstLNx1f6MckDTru.jpg",
+      "releaseYear": 2015,
+      "minutesDuration": 210
+    },
+    {
+      "id": 3,
+      "title": "Inception",
+      "thumbnail": "https://image.tmdb.org/t/p/original/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+      "releaseYear": 2010,
+      "minutesDuration": 148
+    },
+    {
+      "id": 4,
+      "title": "Gran Torino",
+      "thumbnail": "https://picfiles.alphacoders.com/954/thumb-1920-95410.jpg",
+      "releaseYear": 2008,
+      "minutesDuration": 116
+    },
+    {
+      "id": 5,
+      "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "thumbnail": "https://fr.web.img4.acsta.net/medias/nmedia/18/35/07/46/affiche2.jpg",
+      "releaseYear": 2003,
+      "minutesDuration": 143
+    },
+    {
+      "id": 6,
+      "title": "Howl's Moving Castle",
+      "thumbnail": "https://www.freakinawesomenetwork.net/wp-content/uploads/2013/01/Howls-Moving-Castle-2004-2-poster-682x1024.jpg",
+      "releaseYear": 2004,
+      "minutesDuration": 119
+    },
+    {
+      "id": 7,
+      "title": "The Pianist",
+      "thumbnail": "https://www.crew-united.com/Media/Images/1229/1229185/1229185.entity.jpg",
+      "releaseYear": 2002,
+      "minutesDuration": 143
+    },
+    {
+      "id": 8,
+      "title": "Good Will Hunting",
+      "thumbnail": "https://image.tmdb.org/t/p/original/cRGwIKM1FdDvLCz0kxcNURWtyaS.jpg",
+      "releaseYear": 1997,
+      "minutesDuration": 126
+    },
+    {
+      "id": 9,
+      "title": "Fight Club",
+      "thumbnail": "https://image.tmdb.org/t/p/original/8dR7Jd7DOEhU8cZ734Va17NRoZ2.jpg",
+      "releaseYear": 1999,
+      "minutesDuration": 139
+    },
+    {
+      "id": 10,
+      "title": "American Beauty",
+      "thumbnail": "https://image.tmdb.org/t/p/original/br5i6sJZbyKaZQLkrS6HRHGwPkw.jpg",
+      "releaseYear": 1999,
+      "minutesDuration": 122
+    },
+    {
+      "id": 11,
+      "title": "The Matrix",
+      "thumbnail": "https://image.tmdb.org/t/p/original/309gy3jIti5UDEPGiisNpRDv6Pa.jpg",
+      "releaseYear": 1999,
+      "minutesDuration": 136
+    },
+    {
+      "id": 12,
+      "title": "Alien",
+      "thumbnail": "https://www.cornettfiction.com/wp-content/uploads/2020/01/aliens-poster-1986.jpg",
+      "releaseYear": 1979,
+      "minutesDuration": 116
+    }
+  ],
+  "favourites": [
+    {
+      "movieId": 3,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "movieId": 8,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "movieId": 9,
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "movieId": 7,
+      "userId": 1,
+      "id": 4
+    }
+  ]
+}
