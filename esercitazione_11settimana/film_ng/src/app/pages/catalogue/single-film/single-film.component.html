@@ -1,0 +1,15 @@
+<div class="card text-bg-dark h-100">
+  <img
+    [src]="movie.thumbnail"
+    class="card-img-top"
+    [alt]="movie.title + 'thumbnail'"
+  />
+  <div class="card-body">
+    <h5 class="card-title fw-bold">{{ movie.title }}</h5>
+    <p class="card-text">Release: {{ movie.releaseYear }}</p>
+    <p class="card-text">Duration: {{ movie.minutesDuration }} min</p>
+    <button class="btn btn-success" (click)="toggleFavourite(movie.id)">
+      {{ liked ? "Rimuovi dai preferiti" : "Aggiungi ai preferiti" }}
+    </button>
+  </div>
+</div>

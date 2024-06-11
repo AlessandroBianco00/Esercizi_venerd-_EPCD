@@ -28,7 +28,7 @@ export class MovieService {
   //Metodi per favoriti
 
   getFavouriteMovies(userId:number) {
-    return this.http.get<iFavourite[]>(`${this.favouritesUrl}?&userId=${userId}`)
+    return this.http.get<iFavourite[]>(`${this.favouritesUrl}?userId=${userId}`)
   }
 
   getFavourite(movieId:number,userId:number) {

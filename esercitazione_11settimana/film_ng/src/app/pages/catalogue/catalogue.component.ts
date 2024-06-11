@@ -23,18 +23,4 @@ export class CatalogueComponent {
     })
   }
 
-  toggleFavourite(movieId:number) {
-    const accessData = this.AuthSvc.getAccessData()
-
-    if(!accessData) return
-    const userId:number = accessData.user.id
-    this.MovieSvc.getFavourite(movieId,userId).subscribe(fav => {
-      if (fav.length) {
-        this.MovieSvc.deleteFavourite(fav[0].id).subscribe()
-      } else {
-        this.MovieSvc.createFavourite(movieId,userId).subscribe()
-      }
-    })
-  }
-
 }
