@@ -10,19 +10,19 @@ namespace NumeriPrimiCalc
         /// <param name="upperBound">Limite superiore dell'intervallo da considerare per l'estrazione dei numeri primi.</param>
         private static void Primes(int upperBound)
         {
-            Console.Write("2 3 5 7");
-            for (int i = 11; i < upperBound; i += 2)
+            Console.Write("2 3 5 7"); //Per comodità stampo i primi 4 numeri primi, e parto a contare da 11
+            for (int i = 11; i < upperBound; i += 2) //Controllo solo i numeri dispari
             {
                 bool prime = true;
-                for (int j = 3; j < Math.Sqrt(i); j += 2)
+                for (int j = 3; j < Math.Sqrt(i); j += 2) // termino il controllo di divisori a sqrt(i), per velocizzare il ciclo
                 { 
                     if (i%j == 0) 
                     {
                         prime = false;
-                        break;
+                        break; // Blocco il ciclio quando trovo un divisore del numero
                     }
                 }
-                if (prime) { Console.Write($" {i}"); }
+                if (prime) { Console.Write($" {i}"); } // Se non ho trovato divisori stampo il numero primo
             }
         }
         static void Main(string[] args)
