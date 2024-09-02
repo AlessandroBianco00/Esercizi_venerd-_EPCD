@@ -911,6 +911,7 @@ export class TodoService {
     }
   ]
 
+  //Funzione per incrociare i dati di utenti e to-do. Restituisce un array di to-do con la nuova proprietà "author"
   addAuthor(array1:iTodo[], array2:iUser[]):iTodo[] {
     array1 = array1.map(todo => {
       let author = array2.find(user => user.id == todo.userId
